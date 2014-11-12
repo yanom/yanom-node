@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>桃太郎</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<section data-markdown>
+        ## 日本スライド昔話
+        
+        **～桃太郎～**  
+        
+        内容は何でも良かった
+			</section>
+
+			<section data-markdown>
+				### 序章～今は昔～
+				
+				むかしむかしあるところに  
+				おじいさんとおばあさんが  
+				暮らしていました。  
+			</section>
+			
+			<section data-markdown>
+				### 第一章～日々の仕事～
+				
+				ある日おじいさんは山へ芝刈りに  
+				おばあさんは川へ洗濯へ行きました。  
+				
+				おばあさんが川で洗濯をしていると  
+				川上から大きな桃が  
+				**どんぶらこ どんぶらこ**  
+				と流れてきました。  
+				
+				もちろん持って帰りました。  
+			</section>
+
+			<section data-markdown>
+				### 第二章～子宝は突然に～
+				
+				老夫婦が桃を食べようと桃を切ってみると  
+				なんと！中から元気な赤ちゃんが出てきました。  
+				
+				*「これはきっと、神様からの贈り物に違いない」*  
+				
+				子供のいなかった老夫婦は大喜び。  
+				桃から生まれた男の子を  
+				**桃太郎**  
+				と名付けました。  
+				
+				桃太郎はすくすくと育ち、  
+				やがて村一番の兵法者となりました。
+			</section>
+			
+			<section data-markdown>
+				## 終
+				
+				めでたし、めでたし。
+			</section>
+			
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script>
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+
+	</script>
+
+</body>
+
+</html>
